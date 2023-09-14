@@ -253,25 +253,28 @@ Fonts - Google Fonts
 */
 
 window.onload = function () {
-  Particles.init({
-    selector: ".background"
+  const particles = Particles.init({
+    selector: ".background",
+    color: ["#03dac6", "#ff0266", "#000000"],
+    maxParticles: 20,
+    connectParticles: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+          color: ["#faebd7", "#03dac6", "#ff0266"],
+          maxParticles: 1,
+          connectParticles: false,
+          density: {
+            enable: true,
+            value_area: 2                                  // Adjust the value to control density
+          }
+        }
+      }
+    ]
   });
 };
-const particles = Particles.init({
-  selector: ".background",
-  color: ["#03dac6", "#ff0266", "#000000"],
-  connectParticles: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      options: {
-        color: ["#faebd7", "#03dac6", "#ff0266"],
-        maxParticles: 43,
-        connectParticles: false
-      }
-    }
-  ]
-});
+
 
 class NavigationPage {
   constructor() {
