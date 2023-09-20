@@ -20,14 +20,16 @@ if( get_theme_mod('vvw_computer_repair_pro_topbar_bgcolor','') ) {
 
 ?>
 <section id="site_top" class="top_bar p-0" style="<?php echo esc_attr($about_backg); ?>">
+
   <div class="container">
+    
     <div class="row">
       <div class="col-lg-3 col-md-0">
 
       </div>
       <div class="col-lg-4 col-md-6 topbar-social">
         <?php get_template_part('template-parts/home/social-icons'); ?>
-
+       
       </div>
       <div class="col-lg-5 col-md-6 cart-box text-lg-right text-md-center text-center">
         <?php if ( class_exists( 'WooCommerce' ) ) { ?>

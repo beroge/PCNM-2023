@@ -34,6 +34,11 @@ else{
     <div id="header">
       <div id="header-menu">
         <div class="header-wrap" style="<?php echo esc_attr($headerchoose);?>">
+          <img class="twenty" src="https://pc-nm.com/wp-content/uploads/2023/09/r20yrs.png" alt="<?php esc_attr_e( '20 Years', 'vw-computer-repair-pro' ); ?>">
+          <div id="scamAlert">
+              We have been notified that a scammer is using our name to call people and tell them that their computer is infected. We do not make unsolicited calls. If you receive a call from someone claiming to be from Performance Computers llc, please hang up and call us at 505-866-1175.
+          </div>
+            
           <?php 
             get_template_part('template-parts/header/top-bar');
           ?>

@@ -26,9 +26,12 @@
       <div class="col-lg-0 col-md-0">
 
       </div>
+      
       <div class="col-lg-12 col-md-12 contact-det-box">
-      <span class="text-logo">Performance Computers</span>
-        <?php if(get_theme_mod('vw_computer_repair_pro_contact_details_address_text')!=''){ ?>
+      <img src="https://pc-nm.com/wp-content/uploads/2023/07/mlogo.png" alt="mobile logo" />
+      <span class="text-logo"><strong>P</strong>erformance <strong>C</strong>omputers, LLC</span>
+        
+          <?php if(get_theme_mod('vw_computer_repair_pro_contact_details_address_text')!=''){ ?>
           <?php if(get_theme_mod('vw_computer_repair_pro_contact_details_address_icon')!=''){ ?>
             <i class="<?php echo esc_html(get_theme_mod('vw_computer_repair_pro_contact_details_address_icon','fas fa-map-marker-alt')); ?> p-1"></i>
           <?php } ?>
@@ -47,6 +50,7 @@
           <?php } ?>
           <span class="d-inline-block"><?php echo esc_html(get_theme_mod('vw_computer_repair_pro_contact_details_email_text')); ?></span></a>
         <?php } ?>
+        
       </div>
     </div>
   </div>
